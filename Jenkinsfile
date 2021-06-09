@@ -7,9 +7,9 @@ pipeline {
         stage('build') {
             steps {
                 echo 'Hello world'
-                sh 'mvn --version'
+                bat 'mvn --version'
                 echo 'Print version'
-                sh 'mvn clean compile'
+                bat 'mvn clean compile'
                 echo 'Maven Clean Compile done'
             }
         }
