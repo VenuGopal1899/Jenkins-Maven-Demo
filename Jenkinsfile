@@ -6,11 +6,10 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo 'Hello world'
+                echo 'Build started'
                 bat 'mvn --version'
-                echo 'Print version'
                 bat 'mvn clean compile'
-                echo 'Maven Clean Compile done'
+                echo 'Build finished Succesfully'
             }
         }
     }
