@@ -9,7 +9,9 @@ pipeline {
                 echo 'Build started'
                 bat 'mvn --version'
                 bat 'mvn clean compile'
-                echo 'Build finished Succesfully'
+                echo 'Build Compiled Succesfully'
+                bat 'mvn test'
+                echo 'Build Finished Succesfully'
             }
         }
     }
